@@ -115,7 +115,7 @@
           "name" : "Upload artifact",
           "uses" : "actions/upload-artifact@v4",
           "with" : {
-            "name" : "${{ github.event.repository.name }}-web",
+            "name" : "${{ github.event.repository.name }}-web-multi-thread",
             "path" : "build/*.zip"
           }
         }
