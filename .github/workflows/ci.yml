@@ -101,7 +101,7 @@
         },
         {
           "name" : "Configure project",
-          "run" : "emcmake cmake -DKRKRSDL2_EMSCRIPTEN_ENABLE_THREADS=ON -DKRKRSDL2_EMSCRIPTEN_ENABLE_WASM_SIMD=ON -S . -B build"
+          "run" : "emcmake cmake -S . -B build -DKRKRSDL2_EMSCRIPTEN_ENABLE_THREADS=ON -DKRKRSDL2_EMSCRIPTEN_ENABLE_WASM_SIMD=ON"
         },
         {
           "name" : "Build project",
@@ -109,7 +109,7 @@
         },
         {
           "name" : "Archive artifact",
-          "run" : "cd build && 7z a -tzip ${{ github.event.repository.name }}-web.zip krkrsdl2.wasm krkrsdl2.js index.html"
+          "run" : "cd build && 7z a -tzip ${{ github.event.repository.name }}-web-multi-thread.zip krkrsdl2.wasm krkrsdl2.js index.html"
         },
         {
           "name" : "Upload artifact",
