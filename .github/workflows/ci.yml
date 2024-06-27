@@ -101,7 +101,7 @@
         },
         {
           "name" : "Configure project",
-          "run" : "emcmake cmake -DKRKRSDL2_EMSCRIPTEN_ENABLE_THREADS=ON -S . -B build"
+          "run" : "emcmake cmake -DKRKRSDL2_EMSCRIPTEN_ENABLE_THREADS=ON -DKRKRSDL2_EMSCRIPTEN_ENABLE_WASM_SIMD=ON -S . -B build"
         },
         {
           "name" : "Build project",
