@@ -109,7 +109,7 @@
         },
         {
           "name" : "Archive artifact",
-          "run" : "cd build && 7z a -tzip ${{ github.event.repository.name }}-web-multi-thread.zip krkrsdl2.wasm krkrsdl2.js index.html"
+          "run" : "cd build && 7z a -tzip ${{ github.event.repository.name }}-web-multi-thread.zip *.*"
         },
         {
           "name" : "Upload artifact",
