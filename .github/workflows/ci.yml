@@ -554,6 +554,7 @@
         "build-ubuntu",
         "build-vita",
         "build-web",
+        "build-web-multi-thread",
         "build-win32",
         "generate-tp-stub-ubuntu"
       ],
